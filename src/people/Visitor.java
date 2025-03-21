@@ -1,5 +1,7 @@
 package people;
 
+import restaurant.Restaurant;
+
 public class Visitor {
 	private String name;
 	Integer totalPrice = 0;
@@ -18,8 +20,7 @@ public class Visitor {
 	}
 
 	public void showTotalPrice() {
-		System.out.println(this.name + " Total Price: Rp." + this.totalPrice);
-		
+		System.out.println(this.name + " Total Price: " + Restaurant.formatIDR(this.totalPrice));
 	}
 	
 	public void addTotalPrice(Integer price) {
