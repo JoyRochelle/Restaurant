@@ -59,7 +59,7 @@ public class Restaurant {
 			return;
 		}
 		visitor.addTotalPrice(temp.getPrice()*quantity);
-		chef.addHistory(String.format("%s cook %s", chef.getName(), foodName));
+		chef.addHistory(String.format("%s cook %s for %s with quantity order %d", chef.getName(), foodName, visitor.getName(), quantity));
 		totalIncome += temp.getPrice()*quantity;
 	}
 

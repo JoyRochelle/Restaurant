@@ -33,6 +33,7 @@ public class Main {
 		
 		restaurant.addMenu(dessert);
 		restaurant.addChef(chef1);
+		restaurant.addChef(chef2);
 		
 		restaurant.showMenu();
 		restaurant.showChef();
